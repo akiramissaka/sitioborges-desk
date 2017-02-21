@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banners>
+	<banner>
+		<source>img/banner-home/banner-0.jpeg</source>
+		<desc>Banner 1</desc>
+	</banner>
+	<banner>
+		<source>img/banner-home/banner-1.jpeg</source>
+		<desc>Banner 2</desc>
+	</banner>
+	<banner>
+		<source>img/banner-home/banner-2.jpeg</source>
+		<desc>Banner 3</desc>
+	</banner>
+	<banner>
+		<source>img/banner-home/banner-3.jpeg</source>
+		<desc>Banner 4</desc>
+	</banner>
+	<banner>
+		<source>img/banner-home/banner-4.jpeg</source>
+		<desc>Banner 5</desc>
+	</banner>
+	<banner>
+		<source>img/banner-home/banner-5.jpeg</source>
+		<desc>Banner 6</desc>
+	</banner>
+	<banner>
+		<source>img/banner-home/banner-6.jpeg</source>
+		<desc>Banner 7</desc>
+	</banner>
+</banners>
