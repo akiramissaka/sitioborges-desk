@@ -131,7 +131,7 @@ function htmlLoad() {
 	var mainMenu = document.getElementById('mainMenu').children;
 	
 	if(currentPage == 'index.html'){ //carrega o banner rotator apenas se a pagina atual for a home
-		var bannerRotator = new BannerRotator('img/banner-home/banner.xml', 5000);
+		var bannerRotator = new BannerRotator('img/banner-home/banner.xmlssss', 5000);
 		bannerRotator.init();
 	}
 	
