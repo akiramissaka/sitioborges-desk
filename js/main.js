@@ -21,7 +21,7 @@ function BannerRotator(strXMLPath, iTimeOut){
 		t = setTimeout(function(){self.changeBanner(false);}, iTimeOut);
 	}
 	
-	this.changeBanner = function (blnIsBacking){
+	this.changeBanner = function (blnIsBacking, event){
 		var bannerList = document.getElementById('bannerRotator').getElementsByClassName('banner-list')[0];
 		var iNextBanner, iPreviousBanner, blnFirstLoad = true;
 		
