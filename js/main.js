@@ -12,7 +12,7 @@ function BannerRotator(strXMLPath, iTimeOut){
 				func(this);
 			}
 		}
-		xmlhttp.open('POST', strFileName, true);
+		xmlhttp.open('GET', strFileName, true);
 		xmlhttp.send();
 		return false;
 	}
