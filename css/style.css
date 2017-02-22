@@ -208,6 +208,7 @@ nav.menubar ul li.selected a{
 	justify-content: center;
 	display: flex;
 	left: 0;
+	height: 128px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
