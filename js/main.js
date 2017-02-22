@@ -12,7 +12,7 @@ function BannerRotator(strXMLPath, iTimeOut){
 				func(this);
 			}
 		}
-		xmlhttp.open('GET', strFileName, true);
+		xmlhttp.open('POST', strFileName, true);
 		xmlhttp.send();
 		return false;
 	}
@@ -129,9 +129,11 @@ function onLoadSelectMenu(){	//seleciona a opçao do menu no onload de acordo co
 function htmlLoad() {
 	var currentPage = whatPage();
 	var mainMenu = document.getElementById('mainMenu').children;
+	var strLoc = 'https://akiramissaka.github.io/sitioborges-desk/img/banner-home/banner.xml'
 	
 	if(currentPage == 'index.html'){ //carrega o banner rotator apenas se a pagina atual for a home
-		var bannerRotator = new BannerRotator('img/banner-home/banner.xmlssss', 5000);
+		//var bannerRotator = new BannerRotator('img/banner-home/banner.xml', 5000);
+		var bannerRotator = new BannerRotator(strLoc, 5000);
 		bannerRotator.init();
 	}
 	
