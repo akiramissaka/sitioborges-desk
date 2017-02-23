@@ -18,16 +18,17 @@ function BannerRotator(strXMLPath, iTimeOut){
 	}
 	
 	function timer(){
-		t = setTimeout(function(){self.changeBanner(false);}, iTimeOut);
+		//t = setTimeout(function(){self.changeBanner(false);}, iTimeOut);
 	}
 	
-	this.changeBanner = function (blnIsBacking, event){
+	this.changeBanner = function (blnIsBacking, e){
 		var bannerList = document.getElementById('bannerRotator').getElementsByClassName('banner-list')[0];
 		var iNextBanner, iPreviousBanner, blnFirstLoad = true;
 		
-		if(event){
-			event.preventDefault();
+		if(e){
+			e.preventDefault();	
 		}
+		
 		
 		clearTimeout(t);
 		timer();
@@ -81,12 +82,12 @@ function BannerRotator(strXMLPath, iTimeOut){
 		}
 		//adiciona a classe hidden a div com o texto de loading
 		document.getElementById('bannerRotator').getElementsByClassName('loading-img')[0].classList.add('hidden');
-		self.changeBanner(false);
+		self.changeBanner(false, null);
 	}
 	
 	this.init = function(){
-		document.getElementById('btRight').addEventListener('click', function(){self.changeBanner(false)}, false);
-		document.getElementById('btLeft').addEventListener('click', function(){self.changeBanner(true)}, false);		
+		document.getElementById('btRight').addEventListener('click', function(event){self.changeBanner(false, event)}, false);
+		document.getElementById('btLeft').addEventListener('click', function(event){self.changeBanner(true, event)}, false);		
 		ajax(strXMLPath, this.carregaBanner);
 	}
 }
