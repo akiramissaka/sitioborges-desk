@@ -18,7 +18,7 @@ function BannerRotator(strXMLPath, iTimeOut){
 	}
 	
 	function timer(){
-		//t = setTimeout(function(){self.changeBanner(false);}, iTimeOut);
+		t = setTimeout(function(){self.changeBanner(false, null);}, iTimeOut);
 	}
 	
 	this.changeBanner = function (blnIsBacking, e){
